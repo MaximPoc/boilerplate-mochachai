@@ -43,7 +43,7 @@ suite("Unit Tests", function () {
     // #5
     test("#equal, #notEqual", function () {
       assert.isEquel(12, "12", "Numbers are coerced into strings with ==");
-      assert.isEquel({ value: 1 }, { value: 1 }, "== compares object references");
+      assert.isNotEquel({ value: 1 }, { value: 1 }, "== compares object references");
       assert.isEquel(6 * "2", "12");
       assert.isNotEquel(6 + "2", "12");
     });
