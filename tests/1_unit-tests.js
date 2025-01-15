@@ -42,10 +42,10 @@ suite("Unit Tests", function () {
   suite("Equality", function () {
     // #5
     test("#equal, #notEqual", function () {
-      assert.isEquel(12, "12", "Numbers are coerced into strings with ==");
-      assert.isNotEquel({ value: 1 }, { value: 1 }, "== compares object references");
-      assert.isEquel(6 * "2", "12");
-      assert.isNotEquel(6 + "2", "12");
+      assert.isEqual(12, "12", "Numbers are coerced into strings with ==");
+      assert.isNotEqual({ value: 1 }, { value: 1 }, "== compares object references");
+      assert.isEqual(6 * "2", "12");
+      assert.isNotEqual(6 + "2", "12");
     });
     // #6
     test("#strictEqual, #notStrictEqual", function () {
